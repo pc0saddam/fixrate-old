@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fixrate Shopping</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="Header.css">
+</head>
+<style>
+  .card{
+  margin:auto;
+  border:solid 1px #dbdad7; 
+  width:60%; 
+  padding-left:10px!important;
+  padding-bottom:10px!important;
+  padding-right:10px!important;
+  padding-top: 0px!important;
+  
+}
+
+.card-title{
+  margin:auto;
+  padding:15px;
+  background-color: #2f7fad;
+  color: white;
+  width:80%;
+}
+
+div.card-body{
+  padding:0px;
+}
+.custom-select{
+  width:100%;
+}
+
+.btn2{
+  margin-left:10%;
+}
+input {
+  outline: 0!important;
+  border-width: 0 0 2px!important;
+  border-color: #d1d1cf!important;
+}
+input:focus {
+  border-color: #d1d1cf!important;
+ -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
+select{
+
+ outline: 0!important;
+  border-width: 0 0 2px!important;
+  border-color: #d1d1cf!important;
+}
+
+select:focus{
+    border-color: #d1d1cf!important;
+ -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
+.radiobtn{
+  margin-left: 3.5%;
+}
+
+.icons{
+  margin:auto!important;
+
+}
+
+.fa{
+  border-radius: 25px;
+  width: 10%;
+  margin-left: 5%;
+  border:solid 2px #dbdad7;
+  margin-top:5%;
+  text-align: center;
+}
+
+.fa-plane{
+  color:#1cad9f;
+}
+
+.fa-taxi{
+  color: #c2f700;
+}
+
+.fa-train{
+  color:red;
+}
+
+@media only screen and (max-width: 600px) {
+  .card{
+    margin:auto;
+    border:solid 1px #dbdad7;
+    width:90%;
+    padding-left:10px!important;
+    padding-bottom:10px!important;
+    padding-right:10px!important;
+    padding-top: 0px!important;
+  
+  }
+
+  .fa{
+    border-radius: 25px;
+    width: 15%;
+    margin-left: 5%;
+    border:solid 2px #dbdad7;
+    margin-top:5%;
+    text-align: center;
+  }
+} 
+
+#Cart{
+  fill: white;
+}
+</style>
+<body>
+<nav class="navbar navbar-expand-sm bg-green navbar-green">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd4DDBJH_n__M8AhamBUcPf72Yg_9Lnx4OYQ&usqp=CAU" alt="Logo" height="50px;" width="50px;" class="rounded-pill">
+      <a class="singup" href="#"></a>
+      <a class="login" href="#"></a>
+    </a>  
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-green bg-green">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white; font-size: 20px;">FIXRATE SHOPPING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b style="color:white;">Become a Seller</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b style="color:white;">More</b>
+            </a>
+            <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" style="color:white;" href="#">Notification Preferences</a></li>
+              <li><a class="dropdown-item" style="color:white;" href="#">24 X 7 Customer Services</a></li>
+              <li><a class="dropdown-item" style="color:white;" href="#">Advertise</li>
+              <li><a class="dropdown-item" style="color:white;" href="#">Download App</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link abled" href="#" tabindex="-1" aria-disabled="true">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	          width="40px" height="36px" viewBox="0 0 40 36" style="enable-background:new 0 0 40 36;" xml:space="preserve"><g id="Page-1_4_" sketch:type="MSPage"><g id="Desktop_4_" transform="translate(-84.000000, -410.000000)" sketch:type="MSArtboardGroup">
+		        <path id="Cart" sketch:type="MSShapeGroup" class="st0" d="M94.5,434.6h24.8l4.7-15.7H92.2l-1.3-8.9H84v4.8h3.1l3.7,27.8h0.1 c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h12.8c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h1.7v-3.9l-25.8-0.1L94.5,434.6" /></g></g></svg>
+            <b style="color:white;"> Cart &nbsp;</b></a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" style="color:white; background-color:green; border-color:green;" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Card-->
+  <div class="card shadow mb-5 bg-white rounded">
+  
+    <!--Card-Body-->
+    <div class="card-body">
+  
+      <!--Card-Title-->
+      <p class="card-title text-center shadow mb-5 rounded">Travel Booking Form</p>
+   
+   <div class="icons text-center">
+  
+  <i class="fa fa-plane fa-2x" aria-hidden="true"></i>
+  <i class="fa fa-taxi fa-2x" aria-hidden="true"></i>
+  <i class="fa fa-train fa-2x" aria-hidden="true"></i>
+  
+  
+   </div>
+  
+      <hr>
+  
+      <p class="searchText"><strong>Search For Cheap Flights</strong></p>
+  
+      <!--First Row-->
+      <div class="row mb-3 mt-3">
+  
+        <label class="radiobtn"><input type="radio" name="gender" value="male">One Way</label>
+        <label class="radiobtn"><input type="radio" name="gender" value="male">Round Trip</label>
+  
+      </div>
+  
+  
+      <!--Second Row-->
+      <div class="row">
+  
+        <div class="col-sm-6">
+          <select class="browser-default custom-select mb-4" id="select">
+          <option value="" disabled="" selected="">From City/Airport</option>
+          <option value="1">New Delhi</option>
+          <option value="2">Mumbai</option>
+          <option value="3">Bangalore</option>
+      </select>
+        </div>
+  
+        <div class="col-sm-6">
+          <select class="browser-default custom-select mb-4" id="select">
+          <option value="" disabled="" selected="">To City/Airport</option>
+         <option value="1">New Delhi</option>
+          <option value="2">Mumbai</option>
+          <option value="3">Bangalore</option>
+      </select>
+        </div>
+  
+      </div>
+  
+  
+      <!--Third Row-->
+      <div class="row">
+  
+        <div class="col-sm-6">
+          <input placeholder="&#xf073; Departing" type="text" id="date-picker-example" class="form-control datepicker mb-4" style="font-family:Arial, FontAwesome" >
+        </div>
+  
+          <div class="col-sm-6">
+            <input placeholder="&#xf073; Arriving" type="text" id="date-picker-example" class="form-control datepicker" style="font-family:Arial, FontAwesome" >
+        </div>
+  
+          </div>
+  
+  
+          <!--Fourth Row-->
+          <div class="row mt-4">
+  
+            <div class="col-sm-6">
+              <select class="browser-default custom-select mb-4" id="select">
+          <option value="" disabled="" selected="">Anytime</option>
+          <option value="1">6:00 AM</option>
+          <option value="2">3:00 PM</option>
+          <option value="3">6:00 PM</option>
+      </select>
+            </div>
+  
+            <div class="col-sm-6">
+              <select class="browser-default custom-select mb-4" id="select">
+          <option value="" disabled="" selected="">Anytime</option>
+            <option value="1">6:00 AM</option>
+          <option value="2">3:00 PM</option>
+          <option value="3">6:00 PM</option>
+      </select>
+            </div>
+  
+          </div>
+  
+  
+  
+  
+          <!--Fifth Row-->
+          <div class="row">
+  
+            <div class="col-sm-4">
+              <select class="browser-default custom-select mb-4" id="select">
+          <option value="" disabled="" selected="">Kids(0-14)</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+      </select>
+            </div>
+  
+            <div class="col-sm-4">
+              <select class="browser-default custom-select mb-4" id="select">
+          <option value="" disabled="" selected="">Adults(15-64)</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+      </select>
+            </div>
+  
+            <div class="col-sm-4">
+              <select class="browser-default custom-select mb-4" id="select">
+          <option value="" disabled="" selected="">Seniors(65+)</option>
+     <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+      </select>
+            </div>
+  
+  
+  
+          </div>
+  
+          <a href="#" class="btn btn-primary float-right mt-5">Find Flights</a>
+        </div>
+      </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify"><i>Saddam Hussain Siddiqui</i></p>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instragram</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+       <a href="#" style="color:orange; font-size:20px; text-decoration:none;">Saddam Hussain Siddiqui</a>.
+          </p>
+        </div>
+  
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>

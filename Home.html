@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fixrate Shopping</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="Header.css">
+</head>
+<style>
+  #sig{
+    text-decoration: none;
+    color:white;
+  } 
+
+  #Cart{
+fill:white;
+} 
+
+#more{
+background-color: black;
+} 
+
+#search{
+background-color:green;
+border-color: green;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 20px;
+}
+</style>
+<body>
+ <!---Saddam Navigation-->
+<nav class="navbar navbar-expand-sm bg-green navbar-green">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd4DDBJH_n__M8AhamBUcPf72Yg_9Lnx4OYQ&usqp=CAU" alt="Logo" height="50px;" width="50px;" class="rounded-pill">
+      <a class="singup" href="Signup.html" id="sig"><b style="font-size:25px;">SignUp</b></a>
+      <a class="login" href="Login.html" id="sig"><b style="font-size:25px;">Login</b></a>
+    </a>  
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-green bg-green">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bolder; color:white; font-size: 20px;">FIXRATE SHOPPING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b style="color:white;">Become a Seller</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <b style="color:white;">More</b>
+            </a>
+            <ul class="dropdown-menu" id="more" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Notification.html"><b style="color:white;">Notification Preferences</b></a></li>
+              <li><a class="dropdown-item" href="#"><b style="color:white;">24 X 7 Customer Services</b></a></li>
+              <li><a class="dropdown-item" href="#"><b style="color:white;">Advertise</b></li>
+              <li><a class="dropdown-item" href="#"><b style="color:white;">Download App</b></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link abled" href="#" tabindex="-1" aria-disabled="true">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	          width="40px" height="36px" viewBox="0 0 40 36" style="enable-background:new 0 0 40 36;" xml:space="preserve"><g id="Page-1_4_" sketch:type="MSPage"><g id="Desktop_4_" transform="translate(-84.000000, -410.000000)" sketch:type="MSArtboardGroup">
+		        <path id="Cart" sketch:type="MSShapeGroup" class="st0" d="M94.5,434.6h24.8l4.7-15.7H92.2l-1.3-8.9H84v4.8h3.1l3.7,27.8h0.1 c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h12.8c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h1.7v-3.9l-25.8-0.1L94.5,434.6" /></g></g></svg>
+            <b style="color:white;">Cart</b></a>
+          </li>
+        </ul>
+        &nbsp; &nbsp;
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" id="search"  type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-green bg-green"> 
+      <div class="d-inline-flex p-2 bd-highlight">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" width="100px;" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b09ce42c5162abe2.png?q=100" width="100px;" class="img-fluid" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+</ul>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-black bg-black">
+    <div class="container-fluid">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
+    <a href="Topoffer.html" id="sig">Topoffers</a>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="Grocery.html" id="sig">Grocery</a>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="Mobiles.html" id="sig">Mobiles</a>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="Fashion.html" id="sig">Fashion</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="Electronics.html" id="sig">Electronics</a>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="Home.html" id="sig">Home</a>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="Appliances.html" id="sig">Appliances</a>
+      &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="Travels.html" id="sig">Travels</a>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+    <a href="Toys.html" id="sig">Toys</a>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="Vehicle.html" id="sig">Vehicle</a>
+    </ul>
+    </nav>
+<!---Saddam Navigation-->
+ 
+<!------Saddam Content1---->
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://minutebag.com/wp-content/uploads/2018/07/ashirvaad-atta.gif" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+                <h4 class="pull-right"></h4>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label style="font-size:15px; color:green;">Rs 190.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Ashirwaad Ata</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color: red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color: green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/81Fnmd+yNqL._SL1500_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label style="font-size:15px; color:green;">Rs 157.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Real Fruit Juice (1+1L)</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>      
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color: green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://5.imimg.com/data5/QN/QF/MY-8609988/surf-excel-500x500.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label style="font-size:15px; color:green;">Rs 131.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href= "#" style="text-decoration:none; font-size:18px; color:brown;">Tomato Ketchup</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color: red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color: green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRos1tCWXmRl6wDrMhuZM4kOzxU3ZJr0ysPjw&usqp=CAU" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label style="font-size:15px; color:green;">Rs 28.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Sprite</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary"  style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary"  style="background-color: green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTXKPbe23N9id1YRt4ycj-EXcU3XnGG8rS8A&usqp=CAU" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 97.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Harpic Power Plus</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary"  style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary"  style="background-color: green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/SE/PE/DX/145753905/maggie-500x500.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 10.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href= "#" style="text-decoration:none; font-size:18px; color:brown;">Maggi</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary"  style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary"  style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://rukminim1.flixcart.com/image/416/416/l4x2rgw0/washing-bar/u/y/i/-original-imagfpjrng39ummh.jpeg?q=70" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 95.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Rin Detergent Bar</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary"  style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary"  style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://www.bigbasket.com/media/uploads/p/xxl/281513-2_6-wheel-green-lemon-jasmine-detergent-powder.jpg" height="150px;" width="180px;" alt="" class="img-responsive">
+              <div class="caption">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <label style="font-size:15px; color:green;">Rs 8,999.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Wheel Active</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://amritsarstore.com/wp-content/uploads/2019/10/Maggi-Hot-Sweet-Tomato-Chilli-Sauce-01.gif" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+              <label style="font-size:15px; color:green;">Rs 144.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">Maggi Chilli Sauce</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://cdn.shopify.com/s/files/1/0611/8116/5802/products/d_lecta_melto_creative_1800x1800.jpg?v=1644046043" height="150px;" width="170px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 749.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Plain Cheese Slice</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://rukminim1.flixcart.com/image/416/416/l2dmky80/cheese/j/0/f/-original-imagdqc4p6zrh2ny.jpeg?q=70" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 225.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Milky Cheese(500 g)</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="http://cdn.shopify.com/s/files/1/0611/8116/5802/products/001.jpg?v=1656404540" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 365.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href= "#" style="text-decoration:none; font-size:18px; color:brown;">Feta Cheese(100 g)</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;"data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://rukminim1.flixcart.com/image/416/416/kvvad8w0/cheese/w/5/9/-original-imag8z9djt6bkxaz.jpeg?q=70" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 101.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select> 
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" style="text-decoration:none; font-size:18px; color:brown;">SHUDH GARHWAL</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://rukminim1.flixcart.com/image/416/416/khkvukw0/cookie-biscuit/j/9/v/800-g-original-gluco-biscuits-parle-original-imafxk72gm4bjvgd.jpeg?q=70" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 83.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">PARLE G Original</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://rukminim1.flixcart.com/image/416/416/xif0q/soap/y/i/f/-original-imaghbeh7b29jrnc.jpeg?q=70" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 296.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">Pears Soft Fresh</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://rukminim1.flixcart.com/image/416/416/xif0q/cereal-flake/q/t/f/-original-imaggfu23rqn4nex.jpeg?q=70" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 319.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Saffola Masala Oats</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://rukminim1.flixcart.com/image/416/416/xif0q/jam-spread/i/c/u/-original-imaggjzh8etywgzt.jpeg?q=70" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 255.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Kissan Mixed Fruit</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://rukminim1.flixcart.com/image/416/416/l0r1j0w0/honey/j/e/0/-original-imagcgs3kfnrj8mm.jpeg?q=70" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 157.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">ZANDU Pure Honey</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://cccapi.cococa.in/public/uploads/product_images/product_image_1200x1200/test-Grandma's-Mixed-Fruit-Jam-200g.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 152.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Mixed Fruit Jam</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/51Vzx5yMOqL._SL1000_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 138.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Apis Himalaya Honey</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary"  style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary"  style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://indiasbasket.in/wp-content/uploads/2021/09/71G9EXWwaSL._SL1500_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 126.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href= "#" style="text-decoration:none; font-size:18px; color:brown;">Ghadi Washing Powder</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://www.bigbasket.com/media/uploads/p/l/100270855_3-eastern-masala-garam.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 46.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Eastern Garam Masala</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/81B2oeclw7L._SL1500_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 10.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Everest Garam Masala</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://cdn.shopify.com/s/files/1/0245/4644/3319/products/Everest-Kitchen-King-100g-500px_afa0f975-fb8f-4d7f-97a4-478af02e5343.png?v=1648038747" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 699.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">Kitchen </a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/616w+Q9xWNL._UX679_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 869.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select> 
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Aristocrat Cadet 62cm</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/51xmY6fQBoL._UX679_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 2,199.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Aristocrat NILE 4W</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/510iT8aBkqL._UX679_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 2,763.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select> 
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">Aristocrat Jude 66cm</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/61IN9K+dIcL._SL1500_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 1,231.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">boAt Headphones</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i>Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwbuWEanGKJwix1T_2SV1WeM1aCKArJ3Q_uw&usqp=CAU" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 448.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Zebronics Wired Keyboard</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/61KSceiLHwL._SX679_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 269.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Wired USB Mouse</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://cdn.shopify.com/s/files/1/2505/6374/products/nokia_150-front_back-red.png?v=1598277628" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+              <label style="font-size:15px; color:green;">Rs 2,599.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Nokia 150</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-aMfuITAsJxRqiY1KC_oLV6TVRoH1Evy9Q&usqp=CAU" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 3,499.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Nokia 5310</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/51GSe9rxsoL._SL1080_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+              <label style="font-size:15px; color:green;">Rs 1,784.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">Nokia 105</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/410BPoDWw-L._SX404_BO1,204,203,200_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 2619.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select> 
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Advanced Python</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/51rWckiozoL._SX331_BO1,204,203,200_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 1,495.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Python Data Science</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/51vvg1vmBwL._SX358_BO1,204,203,200_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 495.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select> 
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">Python Programming</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/61y2VVWcGBL._SY450_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 2,347.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select> 
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Phoenix Smart Watch</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/61gscZYmaoL._SY450_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 2,799.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Smartwatch with Alexa</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/61m1QelRUeL._SX466_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <label style="font-size:15px; color:green;">Rs 1,999.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">Display Smart Watch</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:white;">
+  <div class="row">
+      <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/71kSLhL3NDL._SL1500_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label style="font-size:15px; color:green;">Rs 735.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">HP 680 Original Ink</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/81qsB-MfXBL._SX679_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 299.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <h4 class="pull-right"></h4>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration:none; font-size:18px; color:brown;">Leather Wallet(WH2052)</a></h4>
+                <p>
+
+                </p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;"data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>
+              <div class="space-ten"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://m.media-amazon.com/images/I/71ub5xCZM+L._SL1100_.jpg" height="150px;" width="150px;" alt="" class="img-responsive">
+              <div class="caption">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-size:15px; color:green;">Rs 679.00</label>
+                <select style="font-size: 15px; background-color:green; color:white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>  
+                <h4 class="pull-right"></h4>
+                <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=  "#" style="text-decoration:none; font-size:18px; color:brown;">Leather Gifts Sling Bag</a></h4>
+                <p></p>
+              </div>
+              <div class="ratings">
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                   
+                </p>
+              </div>
+              <div class="space-ten"></div>
+              <div class="btn-ground text-center">
+                  <button type="button" class="btn btn-primary" style="background-color:red; border-color:red;"><i class="fa fa-shopping-cart"></i> Add Cart</button>
+                  <button type="button" class="btn btn-primary" style="background-color:green; border-color:green;" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i>Buy Now</button>
+              </div>              
+              <div class="space-ten"></div>
+            </div>
+          </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+<!------Saddam Content1---->
+
+<!---Saddam Footer-->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify"><i>Saddam Hussain Siddiqui</i></p>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instragram</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+       <a href="#" style="color:orange; font-size:20px; text-decoration:none;">Saddam Hussain Siddiqui</a>.
+          </p>
+        </div>
+  
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer> 
+  </body>
+  </html>
